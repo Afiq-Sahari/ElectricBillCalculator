@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/blue_gradient_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/el_background"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/el_foreground" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Electricity Bill Calculator"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtViewUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input Electricity Usage (kWh)"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/txtUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Enter Electricity Usage"
+            android:inputType="numberDecimal"
+            android:minWidth="120dp"
+            android:minHeight="32dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B3FFFFFF"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="80dp"
+            android:minHeight="32dp"
+            android:layout_gravity="end"
+            android:text="Clear"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6495ED"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtViewRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input Rebate (%)"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/txtRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Enter Rebate"
+            android:inputType="numberDecimal"
+            android:minWidth="120dp"
+            android:minHeight="32dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B3FFFFFF"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnClearAll"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#6495ED"
+            android:minWidth="120dp"
+            android:minHeight="40dp"
+            android:text="Clear All"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#6495ED"
+            android:minWidth="120dp"
+            android:minHeight="40dp"
+            android:text="Calculate"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="80dp"
+            android:minHeight="40dp"
+            android:text="About"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6495ED"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/copyrightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="© 2023 Afiq. All rights reserved."
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
